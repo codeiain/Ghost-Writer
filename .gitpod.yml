@@ -1,7 +1,7 @@
 tasks:
   - init: |
       echo 'TODO: build project'
-      sudo apt-get install redis
+      sudo apt-get install redis -y
       redis-server
       python -m venv venv
       venv\Scripts\activate

@@ -1,0 +1,11 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+      sudo apt-get install redis
+      redis-server
+      python -m venv venv
+      venv\Scripts\activate
+      pip install openai rq 
+    command: |
+      echo 'TODO: start app'
+      redis-cli ping
